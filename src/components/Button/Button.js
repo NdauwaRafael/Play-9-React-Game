@@ -9,7 +9,7 @@ const Button = (props) => {
     switch (props.answerIsCorrect) {
         case true:
             button =
-                <button className="btn btn-sm btn-success">
+                <button className="btn btn-sm btn-success" onClick={props.onAcceptAnswer}>
                     <i className="fa fa-check"> </i>
                 </button>;
             break;

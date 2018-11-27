@@ -5,6 +5,9 @@ import React from 'react';
 const Numbers = (props) => {
     let arrayOfNumbers = Array.from(Array(9).keys(), n=>n+1);
     let checkNumber = number => {
+            if(props.usedNumbers.indexOf(number) >= 0){
+                return 'used';
+            }
             if(props.selectedNumbers.indexOf(number) >= 0){
                 return 'selected';
             }
