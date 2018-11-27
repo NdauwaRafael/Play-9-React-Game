@@ -32,6 +32,12 @@ const Button = (props) => {
     return (
         <div className="col-2">
             {button}
+            <br/><br/>
+            <button className="btn btn-sm btn-outline-warning"
+                    onClick={props.onRedraw}
+                    disabled={props.redraws === 0}>
+                <i className="fa fa-refresh"> </i> {props.redraws}
+            </button>
         </div>
     )
 };

@@ -13,11 +13,12 @@ class Game extends Component {
         selectedNumbers: [],
         usedNumbers: [],
         noOfStars: 1 + Math.floor(Math.random() * 9),
-        answerIsCorrect: null
+        answerIsCorrect: null,
+        redraws: 5
     };
 
     selectNumber = (clickedNumber) => {
-        if (this.state.selectedNumbers.indexOf(clickedNumber) >= 0 || this.state.usedNumbers.indexOf(clickedNumber) >= 0 ) {
+        if (this.state.selectedNumbers.indexOf(clickedNumber) >= 0 || this.state.usedNumbers.indexOf(clickedNumber) >= 0) {
             return;
         }
         this.setState(prevState => ({
@@ -33,13 +34,13 @@ class Game extends Component {
         }));
     };
 
-    checkAnswer = ()=>{
+    checkAnswer = () => {
         this.setState(prevState => ({
-            answerIsCorrect: prevState.noOfStars === prevState.selectedNumbers.reduce((acc, n)=>acc+n, 0)
+            answerIsCorrect: prevState.noOfStars === prevState.selectedNumbers.reduce((acc, n) => acc + n, 0)
         }));
     };
 
-    acceptAnswer = ()=>{
+    acceptAnswer = () => {
         this.setState(prevState => ({
             usedNumbers: prevState.usedNumbers.concat(prevState.selectedNumbers),
             selectedNumbers: [],
@@ -48,8 +49,18 @@ class Game extends Component {
         }));
     };
 
+    redraw = () => {
+        if (this.state.redraws === 0){return;}
+        this.setState(prevState => ({
+            noOfStars: 1 + Math.floor(Math.random() * 9),
+            selectedNumbers: [],
+            answerIsCorrect: null,
+            redraws: prevState.redraws - 1
+        }))
+    };
+
     render() {
-        const {selectedNumbers, noOfStars, answerIsCorrect, usedNumbers} = this.state;
+        const {selectedNumbers, noOfStars, answerIsCorrect, usedNumbers, redraws} = this.state;
         return (
             <div className="container">
                 <h1>Play 9</h1>
@@ -60,7 +71,9 @@ class Game extends Component {
                         selectedNumbers={selectedNumbers}
                         onCheckAnswer={this.checkAnswer}
                         onAcceptAnswer={this.acceptAnswer}
-                        answerIsCorrect={answerIsCorrect}/>
+                        onRedraw={this.redraw}
+                        answerIsCorrect={answerIsCorrect}
+                        redraws={redraws}/>
                     <Answer selectedNumbers={selectedNumbers} onUnselectNumber={this.unselectNumber}/>
                 </div>
                 <br/>
