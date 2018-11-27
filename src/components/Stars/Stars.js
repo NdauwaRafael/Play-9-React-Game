@@ -3,13 +3,14 @@
  */
 import React from 'react';
 const Stars =  ()=> {
+    const noOfStars = 8;
+    let stars = [];
+    for(let i = 0; i<noOfStars; i++) {
+        stars.push(<i key={i} className="fa fa-star"> </i>)
+    }
     return (
         <div className="col-5">
-            <i className="fa fa-star"> </i>
-            <i className="fa fa-star"> </i>
-            <i className="fa fa-star"> </i>
-            <i className="fa fa-star"> </i>
-            <i className="fa fa-star"> </i>
+            {stars}
         </div>
     )
 };
