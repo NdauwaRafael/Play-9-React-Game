@@ -8,6 +8,10 @@ const DoneFlame = (props)=>{
             <h2>
                 {props.doneStatus}
             </h2>
+
+            <button className="btn btn-outline-secondary" onClick={props.onResetGame}>
+                Play Again
+            </button>
         </div>
     )
 }
