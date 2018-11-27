@@ -9,10 +9,11 @@ import Stars from '../Stars/Stars';
 import Numbers from '../Numbers/Numbers';
 
 class Game extends Component {
+    static radomNumber = ()=> 1 + Math.floor(Math.random() * 9);
     state = {
         selectedNumbers: [],
         usedNumbers: [],
-        noOfStars: 1 + Math.floor(Math.random() * 9),
+        noOfStars: Game.radomNumber(),
         answerIsCorrect: null,
         redraws: 5
     };
@@ -45,14 +46,14 @@ class Game extends Component {
             usedNumbers: prevState.usedNumbers.concat(prevState.selectedNumbers),
             selectedNumbers: [],
             answerIsCorrect: null,
-            noOfStars: 1 + Math.floor(Math.random() * 9)
+            noOfStars: Game.radomNumber()
         }));
     };
 
     redraw = () => {
         if (this.state.redraws === 0){return;}
         this.setState(prevState => ({
-            noOfStars: 1 + Math.floor(Math.random() * 9),
+            noOfStars: Game.radomNumber(),
             selectedNumbers: [],
             answerIsCorrect: null,
             redraws: prevState.redraws - 1
