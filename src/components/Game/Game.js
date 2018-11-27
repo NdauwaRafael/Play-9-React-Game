@@ -25,17 +25,18 @@ class Game extends Component {
         }));
     };
     render(){
+        const {selectedNumbers, noOfStars} = this.state;
         return (
             <div className="container">
                 <h1>Play 9</h1>
                 <hr/>
                 <div className="row">
-                    <Stars noOfStars={this.state.noOfStars}/>
-                    <Button/>
-                    <Answer selectedNumbers = {this.state.selectedNumbers} onUnselectNumber={this.unselectNumber}/>
+                    <Stars noOfStars={noOfStars}/>
+                    <Button selectedNumbers = {selectedNumbers}/>
+                    <Answer selectedNumbers = {selectedNumbers} onUnselectNumber={this.unselectNumber}/>
                 </div>
                 <br />
-                <Numbers selectedNumbers = {this.state.selectedNumbers} onSelectNumber={this.selectNumber}/>
+                <Numbers selectedNumbers = {selectedNumbers} onSelectNumber={this.selectNumber}/>
             </div>
         )
     }
