@@ -7,15 +7,17 @@ import Answer from '../Answer/Answer';
 import Button from '../Button/Button';
 import Stars from '../Stars/Stars';
 import Numbers from '../Numbers/Numbers';
+import DoneFrame from '../Done/DoneFrame'
 
 class Game extends Component {
-    static radomNumber = ()=> 1 + Math.floor(Math.random() * 9);
+    static radomNumber = () => 1 + Math.floor(Math.random() * 9);
     state = {
         selectedNumbers: [],
         usedNumbers: [],
         noOfStars: Game.radomNumber(),
         answerIsCorrect: null,
-        redraws: 5
+        redraws: 5,
+        doneStatus: null
     };
 
     selectNumber = (clickedNumber) => {
@@ -51,7 +53,9 @@ class Game extends Component {
     };
 
     redraw = () => {
-        if (this.state.redraws === 0){return;}
+        if (this.state.redraws === 0) {
+            return;
+        }
         this.setState(prevState => ({
             noOfStars: Game.radomNumber(),
             selectedNumbers: [],
@@ -61,7 +65,7 @@ class Game extends Component {
     };
 
     render() {
-        const {selectedNumbers, noOfStars, answerIsCorrect, usedNumbers, redraws} = this.state;
+        const {selectedNumbers, noOfStars, answerIsCorrect, usedNumbers, redraws, doneStatus} = this.state;
         return (
             <div className="container">
                 <h1>Play 9</h1>
@@ -78,10 +82,15 @@ class Game extends Component {
                     <Answer selectedNumbers={selectedNumbers} onUnselectNumber={this.unselectNumber}/>
                 </div>
                 <br/>
-                <Numbers
-                    selectedNumbers={selectedNumbers}
-                    onSelectNumber={this.selectNumber}
-                    usedNumbers={usedNumbers}/>
+
+                {doneStatus ?
+                        <DoneFrame doneStatus={doneStatus}/>
+                        :
+                        <Numbers
+                            selectedNumbers={selectedNumbers}
+                            onSelectNumber={this.selectNumber}
+                            usedNumbers={usedNumbers}/>
+                }
             </div>
         )
     }
