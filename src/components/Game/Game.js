@@ -20,13 +20,15 @@ class Game extends Component {
             return;
         }
         this.setState(prevState => ({
-            selectedNumbers: prevState.selectedNumbers.concat(clickedNumber)
+            selectedNumbers: prevState.selectedNumbers.concat(clickedNumber),
+            answerIsCorrect: null
         }));
     };
 
     unselectNumber = (clickedNumber) => {
         this.setState(prevState => ({
-            selectedNumbers: prevState.selectedNumbers.filter(number => number !== clickedNumber)
+            selectedNumbers: prevState.selectedNumbers.filter(number => number !== clickedNumber),
+            answerIsCorrect: null
         }));
     };
 
