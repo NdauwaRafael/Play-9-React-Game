@@ -12,3 +12,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.fa-star {
+  margin: 0.5em;
+  font-size: 28px;
+}
+
+span {
+  display: inline-block;
+  margin: 0.5em;
+  text-align: center;
+  background-color: #ccc;
+  width: 24px;
+  border-radius: 50%;
+
+}
