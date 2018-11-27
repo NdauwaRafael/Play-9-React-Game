@@ -3,10 +3,35 @@
  */
 
 import React from 'react';
-const Button =  (props)=> {
+
+const Button = (props) => {
+    let button;
+    switch (props.answerIsCorrect) {
+        case true:
+            button =
+                <button className="btn btn-sm btn-success">
+                    <i className="fa fa-check"> </i>
+                </button>;
+            break;
+        case false:
+            button =
+                <button className="btn btn-sm btn-danger">
+                    <i className="fa fa-times"> </i>
+                </button>;
+            break;
+        default:
+            button =
+                <button
+                    onClick={props.onCheckAnswer}
+                    className="btn btn-sm btn-secondary"
+                    disabled={props.selectedNumbers.length === 0}>
+                    =
+                </button>;
+            break
+    }
     return (
         <div className="col-2">
-            <button className="btn btn-sm btn-secondary" disabled={props.selectedNumbers.length ===0}>=</button>
+            {button}
         </div>
     )
 };

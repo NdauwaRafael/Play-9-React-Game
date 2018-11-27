@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1fb4331e-7463-4882-9a0a-d6ee709b9a02" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Button/Button.js" afterPath="$PROJECT_DIR$/src/components/Button/Button.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Game/Game.js" afterPath="$PROJECT_DIR$/src/components/Game/Game.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,8 +17,8 @@
       <file leaf-file-name="Game.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Game/Game.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
-              <caret line="34" column="43" lean-forward="false" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="43" />
+            <state relative-caret-position="438">
+              <caret line="48" column="37" lean-forward="false" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="37" />
               <folding>
                 <element signature="e#53#92#0" expanded="true" />
               </folding>
@@ -80,8 +81,8 @@
       <file leaf-file-name="Button.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Button/Button.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="8" column="41" lean-forward="false" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+            <state relative-caret-position="528">
+              <caret line="24" column="48" lean-forward="false" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -237,12 +238,12 @@
       <option name="presentableId" value="Default" />
       <updated>1543238396162</updated>
       <workItem from="1543238398338" duration="323000" />
-      <workItem from="1543296674068" duration="6472000" />
+      <workItem from="1543296674068" duration="7447000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6795000" />
+    <option name="totallyTimeSpent" value="7770000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -317,14 +318,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Numbers/Numbers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Stars/Stars.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -341,10 +334,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Numbers/Numbers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Game/Game.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="34" column="43" lean-forward="false" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="43" />
+        <state relative-caret-position="438">
+          <caret line="48" column="37" lean-forward="false" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="37" />
           <folding>
             <element signature="e#53#92#0" expanded="true" />
           </folding>
@@ -353,8 +354,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Button/Button.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="8" column="41" lean-forward="false" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+        <state relative-caret-position="528">
+          <caret line="24" column="48" lean-forward="false" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
           <folding />
         </state>
       </provider>
