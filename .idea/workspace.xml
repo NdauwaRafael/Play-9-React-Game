@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1fb4331e-7463-4882-9a0a-d6ee709b9a02" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Answer/Answer.js" afterPath="$PROJECT_DIR$/src/components/Answer/Answer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Game/Game.js" afterPath="$PROJECT_DIR$/src/components/Game/Game.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Numbers/Numbers.js" afterPath="$PROJECT_DIR$/src/components/Numbers/Numbers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Stars/Stars.js" afterPath="$PROJECT_DIR$/src/components/Stars/Stars.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Game.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Game.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Game/Game.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="16" column="76" lean-forward="true" selection-start-line="16" selection-start-column="76" selection-end-line="16" selection-end-column="76" />
+            <state relative-caret-position="468">
+              <caret line="34" column="91" lean-forward="false" selection-start-line="34" selection-start-column="75" selection-end-line="34" selection-end-column="91" />
               <folding>
                 <element signature="e#53#92#0" expanded="true" />
               </folding>
@@ -71,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Answer.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Answer.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Answer/Answer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="8" column="68" lean-forward="false" selection-start-line="8" selection-start-column="68" selection-end-line="8" selection-end-column="68" />
+            <state relative-caret-position="240">
+              <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -121,11 +118,11 @@
         <option value="$PROJECT_DIR$/src/components/Button/Button.js" />
         <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/components/Answer/Answer.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/components/Numbers/Numbers.js" />
         <option value="$PROJECT_DIR$/src/components/Stars/Stars.js" />
         <option value="$PROJECT_DIR$/src/components/Game/Game.js" />
+        <option value="$PROJECT_DIR$/src/components/Answer/Answer.js" />
       </list>
     </option>
   </component>
@@ -241,12 +238,12 @@
       <option name="presentableId" value="Default" />
       <updated>1543238396162</updated>
       <workItem from="1543238398338" duration="323000" />
-      <workItem from="1543296674068" duration="5774000" />
+      <workItem from="1543296674068" duration="6079000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6097000" />
+    <option name="totallyTimeSpent" value="6402000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -319,14 +316,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Answer/Answer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="8" column="68" lean-forward="false" selection-start-line="8" selection-start-column="68" selection-end-line="8" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -355,11 +344,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Game/Game.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="16" column="76" lean-forward="true" selection-start-line="16" selection-start-column="76" selection-end-line="16" selection-end-column="76" />
+        <state relative-caret-position="468">
+          <caret line="34" column="91" lean-forward="false" selection-start-line="34" selection-start-column="75" selection-end-line="34" selection-end-column="91" />
           <folding>
             <element signature="e#53#92#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Answer/Answer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>

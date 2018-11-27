@@ -6,7 +6,7 @@ const Answer =  (props)=> {
     return (
         <div className="col-5">
             {
-                props.selectedNumbers.map((number, i)=> <span key={i}>{number}</span>)
+                props.selectedNumbers.map((number, i)=> <span onClick={()=> props.onUnselectNumber(number)} key={i}>{number}</span>)
             }
         </div>
     )
